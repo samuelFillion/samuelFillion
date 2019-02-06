@@ -1,0 +1,166 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: #181818;
+    color: #b3b3b3;
+    margin: 0;
+    padding: 1px;
+    font-size: 13px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+
+/* HEADER */
+header{
+    height: 45px;
+    position: fixed;
+    margin-left: 260px;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+header>*{
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    top: 9.5px;
+    vertical-align: middle;
+}
+header .nav .arrow{
+    margin: auto 10px;
+}
+
+header input[type=search] {
+    //-moz-appearance: none;
+    //-webkit-appearance: none;
+     border-radius: 10px;
+}
+header .profile{
+    height: 100%;
+    right: 300px;
+}
+header .scroll_menu{
+    position: relative;
+    bottom: 7.5px;
+}
+header .profile>*{
+    display: inline-block;
+}
+header .profile .profile_picture{
+    width: 30px;
+    height: 30px;
+    background:url("https://via.placeholder.com/30/09f/fff.png") center center no-repeat;
+    border-radius: 20px;
+    margin: 0 auto;
+    //top: 9.5px;
+    position: relative;
+}
+header .profile .name{
+    color: white;
+    font-weight: 600;
+    padding-right: 20px;
+    position: relative;
+    bottom: 7.5px;
+}
+header .grad{
+    background-image: linear-gradient(#303030, rgba(24,24,24,0));
+    width: 100%;
+    height: 175px;
+    top: -1px;
+}
+
+
+
+
+/* TABLE */
+table{
+    border-top: 0.25px solid #b3b3b3;
+    //border-color: white;
+}
+table th, table tr{
+    width: 100%;
+}
+
+
+/* SIDEBAR-LEFT */
+body .sidebar-right{
+    background-color: #131313;
+    width: 300px;
+    height: 100vh;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+body .sidebar-left{
+    background-color: #131313;
+    width: 300px;
+    height: 100vh;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+body .sidebar-left ul{
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+body .sidebar-left ul.playlists {
+    font-size: 12px;
+}
+
+
+body .sidebar-left ul>span{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+body .sidebar-left ul li{
+    line-height: 30px;
+
+}
+body .sidebar-left ul li:hover{
+    color: white;
+    cursor: default;
+}
+body .sidebar-left ul.accueil li{
+    font-weight: 600;
+}
+body .sidebar-left ul.bibliotheque li{
+    line-height: 32px;
+}
+body .sidebar-left ul.playlists li{
+    line-height: 32px;
+}
+body .sidebar-left .photo img{
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* CONTAINER */
+.container{
+    margin-top: 100px;
+    float: left;
+    margin-left: 30px;
+}
+.container>*{
+    //margin-left: 20px;
+}
+.container h1{
+    font-family: 'Montserrat bold', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.container h1, .container h2{
+    color: white;
+}

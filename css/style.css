@@ -1,0 +1,254 @@
+body {
+  color: #fff;
+  // color: rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited, a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.section {
+  text-align: left;
+}
+.section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.section h1.nom{
+  top: 38%;
+  left: 32%;
+  transform: translate(-50%,-50%);
+  font-size: 6.5em;
+  font-weight: 700;
+
+}
+.section h2 {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+.section .apropos{
+  margin: 20px;
+}
+.section .card {
+  display: inline;
+  margin: 1em;
+}
+.section .card img {
+ // width: 200px;
+ // width: 350px;
+}
+.section .contacts a {
+  margin: 20px;
+  font-size: 1.2em;
+  color: #f1f1f1;
+}
+.section .contacts a:hover {
+  text-decoration: underline;
+}
+.section img.profile{
+  width: 30%;
+  float: right;
+  position: relative;
+}
+.section .flex.playlists{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+.section .flex.playlists .description{
+  font-weight: lighter;
+  padding: 5px 0;
+}
+.section .cercle, .section .rectangle{
+  position: absolute;
+}
+.section .cercle{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+
+}
+.section .cercle.cercle1{
+  width: 700px;
+  height: 700px;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #19E68C;
+}
+.section .cercle.cercle2{
+  width: 500px;
+  height: 500px;
+  left: -6%;
+  top: -12%;
+  background: #19E68C;
+}
+.section .cercle.cercle3{
+  width: 100px;
+  height: 100px;
+  top: 5%;
+  left: 35%;
+  background-image: radial-gradient(circle, rgba(106, 255, 203, 0.7) 10%, rgba(0, 169, 157, 1) 20%, rgba(0, 169, 157,0) 50%);
+}
+.section .cercle.cercle4{
+  width: 200px;
+  height: 200px;
+  bottom: 2%;
+  left: 15%;
+  background-image: radial-gradient(circle, rgba(106, 255, 203, 0.7) 10%, rgba(0, 169, 157, 1) 20%, rgba(0, 169, 157,0) 50%);
+}
+.section .rectangle{
+  width: 80%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //background: #19E68C;
+  //background: rgba(25, 230, 140, 0.5);
+  background-image: radial-gradient(circle, rgba(25, 230, 140, 1), rgba(63, 255, 172, 0.1));
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  color: white;
+  z-index: 1;
+}
+nav ul li.animate {
+  top: 0;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 1em 2em;
+  cursor: pointer;
+  position: relative;
+  top: -8em;
+}
+nav ul li:nth-child(1) {
+  -moz-transition: top 0.3s ease 0.15s;
+  -o-transition: top 0.3s ease 0.15s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.15s;
+  transition: top 0.3s ease 0.15s;
+}
+nav ul li:nth-child(2) {
+  -moz-transition: top 0.3s ease 0.2s;
+  -o-transition: top 0.3s ease 0.2s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.2s;
+  transition: top 0.3s ease 0.2s;
+}
+nav ul li:nth-child(3) {
+  -moz-transition: top 0.3s ease 0.25s;
+  -o-transition: top 0.3s ease 0.25s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.25s;
+  transition: top 0.3s ease 0.25s;
+}
+nav ul li:nth-child(4) {
+  -moz-transition: top 0.3s ease 0.3s;
+  -o-transition: top 0.3s ease 0.3s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.3s;
+  transition: top 0.3s ease 0.3s;
+}
+nav ul li:nth-child(5) {
+  -moz-transition: top 0.3s ease 0.35s;
+  -o-transition: top 0.3s ease 0.35s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.35s;
+  transition: top 0.3s ease 0.35s;
+}
+nav ul li:hover {
+  opacity: 1;
+}
+nav ul li i {
+  font-size: 1.5em;
+  background: #10d7af;
+  padding: 0.75em;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+}
+nav ul li h4 {
+  line-height: 2.5;
+}
+
+/*
+
+.menu-icon {
+  position: fixed;
+  z-index: 70;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+}
+.menu-icon:hover span {
+  background: #222;
+}
+.menu-icon:hover span:before, .menu-icon:hover span:after {
+  background: #222;
+}
+.menu-icon > span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  background-color: #3c3c3c;
+  border-radius: 3px;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3c3c3c;
+  border-radius: 3px;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before {
+  -webkit-transform: translateY(-0.75em);
+  transform: translateY(-0.75em);
+}
+
+.menu-icon > span:after {
+  -webkit-transform: translateY(0.75em);
+  transform: translateY(0.75em);
+}
+
+.menu-icon.open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-icon.open > span:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu-icon.open > span:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+*/
