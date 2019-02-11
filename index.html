@@ -40,6 +40,10 @@
     <div class="apropos">
         <div class="triangle">
 
+            <svg height="500" width="500">
+<polygon points="200,10 410,300 10,380" style="stroke:#19E68C;stroke-width:3" />
+</svg>
+
         </div>
         <div class="textes">
             <h2>Je suis...</h2>
@@ -72,9 +76,19 @@
   </div>
   <div class="section" data-anchor="portfolio">
     <h1>Portfolio</h1>
-        <a style="color: yellow" href="https://codepen.io/drygiel/pen/rtpnE"> VOIR SLIDER </a>
+    <a style="color: yellow" href="https://codepen.io/drygiel/pen/rtpnE"> VOIR SLIDER </a>
+    <a style="color: yellow" href="https://codepen.io/gschier/pen/HCoqh"> VOIR SLIDER </a>
     <div class="cards">
-      <div class="card"><a href=""><img src="https://via.placeholder.com/150" alt=""/></a></div>
+      <div class="card"><!-- thumbnail image wrapped in a link -->
+        <a href="#img1">
+          <img src="https://via.placeholder.com/150" class="thumbnail">
+        </a>
+
+        <!-- lightbox container hidden with CSS -->
+        <a href="#_" class="lightbox" id="img1">
+          <img src="https://via.placeholder.com/550">
+        </a>
+      </div>
       <div class="card"><a href=""><img src="https://via.placeholder.com/150" alt=""/></a></div>
       <div class="card"><a href=""><img src="https://via.placeholder.com/150" alt=""/></a></div>
       <div class="card"><a href=""><img src="https://via.placeholder.com/150" alt=""/></a></div>
