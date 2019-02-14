@@ -68,9 +68,15 @@ a, a:visited, a:hover {
   display: inline;
   margin: 1em;
 }
+.section .desc-projet{
+    color: white;
+}
 .section .card img {
  // width: 200px;
  // width: 350px;
+}
+.section .card img:hover {
+
 }
 .section .contacts{
     display: flex;
@@ -85,10 +91,11 @@ a, a:visited, a:hover {
     text-decoration: underline;
 }
 
-.section img.profile{
-  width: 30%;
-  float: right;
-  position: relative;
+.section img.profile {
+    width: 30%;
+    bottom: 0;
+    right: 0%;
+    position: absolute;
 }
 .section .flex.playlists{
   display: flex;
@@ -308,7 +315,7 @@ nav ul li h4 {
 	background: rgba(0,0,0,0.8);
 }
 
-.lightbox img {
+.lightbox img, .lightbox iframe {
 	/** Pad the lightbox image */
 	max-width: 90%;
 	max-height: 80%;
