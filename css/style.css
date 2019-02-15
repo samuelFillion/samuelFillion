@@ -1,7 +1,28 @@
+
+@font-face {
+    font-family: "futura_m";
+    src: url(../font/Futura-Med.eot) format("eot"), url(../font/Futura-Med.woff) format("woff")
+}
+
+@font-face {
+    font-family: "futura_r";
+    src: url(../font/Futura-Boo.eot) format("eot"), url(../font/Futura-Boo.woff) format("woff")
+}
+
+@font-face {
+    font-family: "futura_b";
+    src: url(../font/Futura-Bol.eot) format("eot"), url(../font/Futura-Bol.woff) format("woff")
+}
+
+@font-face {
+    font-family: "futura_de";
+    src: url(../font/Futura-Dem.eot) format("eot"), url(../font/Futura-Dem.woff) format("woff")
+}
+
 body {
   color: #fff;
   // color: rgba(0, 0, 0, 0.5);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'futura_r', sans-serif;
 }
 
 a, a:visited, a:hover {
@@ -14,6 +35,16 @@ a, a:visited, a:hover {
 .section {
   text-align: left;
 }
+.section p {
+    color: #fff;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+.section .textes p{
+    font-size: 1.8rem;
+
+}
 .section h1 {
   font-size: 4em;
   margin-bottom: 20px;
@@ -22,6 +53,14 @@ a, a:visited, a:hover {
   left: 20px;
   font-weight: 700;
   letter-spacing: -.025rem;
+
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.6rem;
+    font-family: "futura_m";
+    font-weight: normal;
+    text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
 }
 .section h1.nom{
   top: 38%;
@@ -32,8 +71,10 @@ a, a:visited, a:hover {
   font-weight: 700;
 }
 .section h2 {
-  font-size: 1.2em;
-  line-height: 2em;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 1.5rem;
+    font-family: 'futura_r', sans-serif;
 }
 .section .apropos{
   margin: 20px;
@@ -84,11 +125,15 @@ a, a:visited, a:hover {
 }
 .section .contacts a {
   margin: 20px;
-  font-size: 1.2em;
   color: #f1f1f1;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 .section .contacts a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #19E68C;
+    transition: color 0.3s ease 0.15s;
 }
 
 .section img.profile {
@@ -328,4 +373,8 @@ nav ul li h4 {
 
 	/** Unhide lightbox **/
 	display: block;
+}
+
+.visuallyHidden{
+    display: none;
 }
