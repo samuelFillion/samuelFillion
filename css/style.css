@@ -43,7 +43,29 @@ a, a:visited, a:hover {
 }
 .section .textes p{
     font-size: 1.8rem;
+}
 
+.section .slide img{
+    width: 560px;
+    float: left;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+.section .slide h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.section .slide .desc{
+    float: left;
+    width: 40%;
+    margin-right: 60px;
+}
+.section .slide .desc p{
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.section .slide .desc strong{
+    font-weight: bolder;
 }
 .section h1 {
   font-size: 4em;
@@ -109,6 +131,7 @@ a, a:visited, a:hover {
   display: inline;
   margin: 1em;
 }
+
 .section .desc-projet{
     color: white;
 }
@@ -365,6 +388,9 @@ nav ul li h4 {
 	max-width: 90%;
 	max-height: 80%;
 	margin-top: 2%;
+}
+.section .slide .lightbox img{
+    width: auto;
 }
 
 .lightbox:target {
