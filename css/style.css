@@ -375,7 +375,7 @@ nav ul li h4 {
     //position: fixed;
 	position: absolute;
 	z-index: 999;
-	width: 100%;
+	width: 35%;
 	height: 100%;
 	text-align: center;
 	top: 0;
@@ -391,6 +391,13 @@ nav ul li h4 {
 }
 .section .slide .lightbox img{
     width: auto;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lightbox:target {
