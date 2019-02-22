@@ -65,10 +65,13 @@ $(document).ready(function() {
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
 
-  if ($("#projet").hasClass("projets")){
-      $("#fp-nav").addClass("visuallyHidden");
-    } else {
-      $("#fp-nav").removeClass("visuallyHidden");
-  }
+  $(window).on('hashchange', function(e){
+      if ($("#projet").hasClass("active")){
+          $("#fp-nav").addClass("visuallyHidden");
+
+        } else {
+          $("#fp-nav").removeClass("visuallyHidden");
+      }
+});
 
 })
