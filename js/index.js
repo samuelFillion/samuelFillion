@@ -64,4 +64,11 @@ $(document).ready(function() {
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
+
+  if ($("#projet").hasClass("projets")){
+      $("#fp-nav").addClass("visuallyHidden");
+    } else {
+      $("#fp-nav").removeClass("visuallyHidden");
+  }
+
 })
