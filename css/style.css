@@ -1,24 +1,4 @@
 
-@font-face {
-    font-family: "futura_m";
-    src: url(../font/Futura-Med.eot) format("eot"), url(../font/Futura-Med.woff) format("woff")
-}
-
-@font-face {
-    font-family: "futura_r";
-    src: url(../font/Futura-Boo.eot) format("eot"), url(../font/Futura-Boo.woff) format("woff")
-}
-
-@font-face {
-    font-family: "futura_b";
-    src: url(../font/Futura-Bol.eot) format("eot"), url(../font/Futura-Bol.woff) format("woff")
-}
-
-@font-face {
-    font-family: "futura_de";
-    src: url(../font/Futura-Dem.eot) format("eot"), url(../font/Futura-Dem.woff) format("woff")
-}
-
 body {
   color: #fff;
   // color: rgba(0, 0, 0, 0.5);
@@ -39,9 +19,9 @@ a:hover, a:active {
 }
 .section p {
     color: #fff;
-    font-size: 2.8rem;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    //letter-spacing: 0.01em;
 }
 .section .textes p{
     font-size: 1.5em;
@@ -90,10 +70,10 @@ a:hover, a:active {
     //text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
 }
 .section h1.nom{
-    position: absolute;
-  top: 38%;
-  left: 32%;
-  transform: translate(-50%,-50%);
+  //position: absolute;
+  //top: 38%;
+  //left: 32%;
+  //transform: translate(-50%,-50%);
   font-size: 4.5em;
   line-height: 4.5rem;
   font-weight: 200;
@@ -102,7 +82,6 @@ a:hover, a:active {
     font-size: 2.5rem;
     line-height: 1;
     margin-top: 1.5rem;
-    font-family: 'futura_r', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 .section .apropos{
@@ -223,14 +202,23 @@ a:hover, a:active {
   background-image: radial-gradient(circle, rgba(106, 255, 203, 0.7) 10%, rgba(0, 169, 157, 1) 20%, rgba(0, 169, 157,0) 50%);
 }
 .section .rectangle{
-  width: 80%;
-  height: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  //background: #19E68C;
+  width: 50%;
+  height: auto;
+  //transform: translate(-50%, -50%);
+  border: 3px solid #19E68C;
   //background: rgba(25, 230, 140, 0.5);
-  background-image: radial-gradient(circle, rgba(25, 230, 140, 1), rgba(63, 255, 172, 0.1));
+  //background-image: radial-gradient(circle, rgba(25, 230, 140, 1), rgba(63, 255, 172, 0.1));
+}
+.section .rectangle1{
+    padding: 40px;
+    top: 60px;
+    left: -3px;
+}
+
+.section .rectangle2{
+    top: 56%;
+    left: 57%;
+    width: 30%;
 }
 
 nav {
